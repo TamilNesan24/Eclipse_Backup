@@ -1,0 +1,46 @@
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import Help.Data;
+
+/**
+ * Servlet implementation class Servlet2
+ */
+@WebServlet("/Servlet2")
+public class Servlet2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+   
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//  Test
+		System.out.println(request.getParameter("method"));
+		String param=(String)request.getAttribute("param");
+		String url=request.getParameter("url");
+		URL urlconnect=new URL(url+param);
+		HttpURLConnection connect=(HttpURLConnection) urlconnect.openConnection();		
+		connect.setRequestMethod(request.getParameter("method")); 
+		response.setContentType("text/plain");
+		System.out.println(connect.getContent());
+        connect.setDoInput(true);
+        BufferedReader in = new BufferedReader(new InputStreamReader(
+                connect.getInputStream()));
+String inputLine;
+while ((inputLine = in.readLine()) != null) 
+System.out.println(inputLine);
+in.close();
+		
+}
+	
+}

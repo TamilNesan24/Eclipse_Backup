@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+  <style>
+.button {
+  background-color: #E7B0B0	; //#ADD8E6
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #E7B0B0	;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.container {
+    width: 406px;
+    max-width: 406px;
+    margin: 0 auto;
+}
+.container1 {
+    width: 406px;
+    max-width: 406px;
+    margin:auto;
+}
+.color
+{
+    
+background: #E7B0B0;
+}
+.sep {
+    height: 0.5px;
+    background: #e8e8e8;
+    width: 406px;
+    margin: 0px 0px;
+}
+
+.inputs {
+    margin-top: 50px;
+}
+.inputs input[type=text], input[type=password] {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+.inputs2 input[type=text]{
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 180px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+.header
+{
+    margin-top: 0px;
+
+color: #000000		;
+text-align: center;
+    
+}
+.sep {
+    height: 0.5px;
+    background: #e8e8e8;
+    width: 1000px;
+    margin: 0px 0px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+  </head>
+
+  <body>
+  <div class="color">
+  <div class="container1">
+
+    <form action="/servlet1" method="post" >
+
+        <div class="header">
+        
+            <h3>MyApp</h3>
+              <div class="sep"></div>
+
+            
+        </div>
+        </div>
+        </div>
+        <div class="sep"></div>
+       
+<div class="container">
+        <div class="inputs">
+        
+        
+         
+        <br>
+        <br>
+            Url:<br>
+            <input type="text" placeholder="Url" name="url" />
+               Method:<br>
+           <select name="method">
+  <option value="GET" >Get</option>
+  <option value="POST">Post</option>
+</select>
+             <div class="inputs2">
+            <table>
+            <h2>Parameters</h2>
+  <tr>
+    <th>Key</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><input type="text" placeholder="Key" name="key"></td>
+    <td><input type="text" placeholder="value" name="value"></td>
+  </tr>
+  <tr>
+    <td><input type="text" placeholder="Key" name="key1"></td>
+    <td><input type="text" placeholder="value" name="value1"></td>
+  </tr>
+  </table>
+  </div>
+            <br>
+            <br>
+            <input type="hidden" id="admin" name="type" value="2">
+            <input type="submit"  class="button1" value="Submit">
+            
+        </div>
+       
+    </form>
+    <br>
+    
+</div>
+</div>
+  </body>
+</html>

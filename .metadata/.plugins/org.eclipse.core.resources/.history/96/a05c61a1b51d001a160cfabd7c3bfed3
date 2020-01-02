@@ -1,0 +1,30 @@
+package com.onlineShoppping;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.google.appengine.api.datastore.DatastoreService;
+import com.google.appengine.api.datastore.DatastoreServiceFactory;
+import com.google.appengine.api.datastore.Entity;
+import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.KeyFactory;
+
+
+@Controller
+public class LoginController {
+	@RequestMapping("/verify")
+	public String verify(String name,String password)
+	{
+	System.out.println("in");
+        Key customerKey = KeyFactory.createKey("Customer", name);
+            Entity customer = new Entity("Customer", customerKey);
+            customer.setProperty("name", name);
+            customer.setProperty("email", password);
+            DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
+            datastore.put(customer);
+    
+            return "yes";
+	
+	}
+
+}

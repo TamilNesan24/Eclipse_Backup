@@ -1,0 +1,6 @@
+package weekone;
+
+public class SampleInherit extends SampleAccessSpecifier
+{
+public 
+}

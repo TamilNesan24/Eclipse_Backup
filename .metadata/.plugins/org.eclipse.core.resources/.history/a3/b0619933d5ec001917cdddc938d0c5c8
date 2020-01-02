@@ -1,0 +1,59 @@
+package firstmonth;
+
+import java.util.Scanner;
+
+public class KAngaroo 
+{
+	public static void main(String args[])
+	{
+		int kang1[] = new int[2] ;
+		int kang2[]= new int[2];
+		int sum,sum1;
+		int temp=0,temp1=0;
+		Scanner in = new Scanner(System.in);
+		for(int i=0;i<2;i++)
+		{
+		//kang1[0]=in.nextInt();
+		kang1[i]=in.nextInt();
+		kang2[i]=in.nextInt();
+		//kang2[1]=in.nextInt();
+		}
+		sum=kang1[0]-kang1[1];//3
+		sum1=kang2[0]-kang2[2];//2
+		if(kang1[0]==kang2[0])
+		{
+			System.out.println("Yes");
+		}
+		else if(kang2[0]>kang1[0]) 
+		{
+		if(sum1<sum) {
+		while(temp!=temp1)
+		{
+			temp=sum+sum;
+			temp1=sum1+sum1;
+			if(temp==temp1)
+			{
+				System.out.println("Yes");
+				break;
+				}
+		}
+		}
+		else
+			System.out.println("No");
+		}
+		
+		
+	}
+
+}
+
+
+
+
+//Scanner scan = new Scanner(System.in);
+//int[] input = new int[4];
+//for(int i=0;i<4;i++){
+//input[i] = scan.nextInt();
+//}
+//System.out.println(kangaroo(input));
+////}

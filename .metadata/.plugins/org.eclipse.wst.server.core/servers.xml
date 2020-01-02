@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server appEngineDevServerPort="7777" auto-publish-setting="2" auto-publish-time="0" hostname="localhost" id="App Engine Standard at localhost (2)" name="App Engine Standard at localhost (2)" runtime-id="App Engine Standard Runtime" server-type="com.google.cloud.tools.eclipse.appengine.standard.server" server-type-id="com.google.cloud.tools.eclipse.appengine.standard.server" start-timeout="240" stop-timeout="240" timestamp="1">
+    <list key="app-engine-server-modules-list" value0="org.eclipse.jst.jee.server:OnlineShopping"/>
+    <list key="modules" value0="OnlineShopping::org.eclipse.jst.jee.server:OnlineShopping::jst.web::3.1"/>
+  </server>
+</servers>

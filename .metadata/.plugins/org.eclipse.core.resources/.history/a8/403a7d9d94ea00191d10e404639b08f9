@@ -1,0 +1,16 @@
+package Classmodifier;
+ class Final {
+	 static{
+		 System.out.println("yes1");
+	 }
+	 static int name() {
+		 System.out.println("yes2");
+		 return 0;
+	 }
+	 public static void main(String args[])
+	 {
+		 Final f= new Final(); 
+		 System.out.println("yes3");
+	 }
+
+}

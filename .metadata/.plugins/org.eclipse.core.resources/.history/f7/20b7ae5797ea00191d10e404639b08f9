@@ -1,0 +1,31 @@
+package Classmodifier;
+ class C
+{
+	C()
+	{
+		
+	System.out.println("Class c");
+	}
+	
+
+}
+ class B extends C 
+{
+	B()
+	{
+		System.out.println("Class b");
+	}
+
+}
+public class A extends B 
+{
+	A()
+	{
+		System.out.println("Class a");
+	}
+	public static void main(String args[])
+	{
+		
+	}
+
+}

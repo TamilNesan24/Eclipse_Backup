@@ -1,0 +1,11 @@
+package Classmodifier;
+ class Final {
+	 static{}
+	 static  name() {}
+	 public static void main(String args[])
+	 {
+		 Final f= new Final(); 
+		 System.out.println("yes");
+	 }
+
+}

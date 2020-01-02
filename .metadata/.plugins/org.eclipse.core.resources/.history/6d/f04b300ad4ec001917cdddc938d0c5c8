@@ -1,0 +1,17 @@
+package firstmonth;
+
+import java.util.Scanner;
+
+public class KAngaroo 
+{
+	public static void main(String args[])
+	{
+		int kang1[]=new kang1[2];
+		int kang2[];
+		int sum;
+		Scanner in = new Scanner(System.in);
+		kang1=in.nextInt();
+		
+	}
+
+}

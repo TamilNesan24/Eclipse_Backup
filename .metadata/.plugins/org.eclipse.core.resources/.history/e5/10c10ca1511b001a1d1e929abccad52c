@@ -1,0 +1,44 @@
+import java.io.IOException;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import Help.Data;
+
+public class Servlet1 extends HttpServlet {
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
+		response.setContentType("text/html");
+		request.getParameter("name");
+		
+	
+//		   converting to query format
+//		   url?name1=value1&name2=value2&??
+		   
+		
+		String param=new String ();
+		System.out.println("yes");
+		if(request.getParameter("key")!=null&&request.getParameter("value")!=null)
+		{
+			param=param.concat("?").concat(request.getParameter("key")).concat("=").concat(request.getParameter("value"));
+		}
+		if(request.getParameter("key1")!=null&&request.getParameter("value1")!=null)
+		{
+			param=param.concat("&").concat(request.getParameter("key1")).concat("=").concat(request.getParameter("value1"));
+		}
+		request.getRequestDispatcher("/servlet2").forward(request, response);
+		
+
+	}
+	
+	      //      Check  
+	
+//	System.out.println(request.getParameter("url")+"  "+request.getParameter("method"));
+//	System.out.println(request.getParameter("key")+request.getParameter("key1"));
+//	System.out.println(request.getParameter("value")+request.getParameter("value1"));
+//	System.out.println(request.getParameter("url")+param);
+}

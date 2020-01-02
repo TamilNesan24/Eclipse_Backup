@@ -1,0 +1,40 @@
+package weekone;
+class Test
+{
+	int name() 
+	{
+		System.out.println("overload1");
+		return 0;
+		}
+	
+	// String name(){return "a";} //throws error because it has same name ..we can overload using return type
+	
+	String name2()
+	{
+		System.out.println("overload2");
+		return "a";
+		}
+	static void test1()
+	{
+		System.out.println("overload1 static");
+	}
+}
+
+public class SamplePolymorphism extends Test 
+{
+	static void test1() 
+	{
+		System.out.println("overload2");
+	}
+	int name()
+	{
+		System.out.println("child overload1");
+		return 0;
+			
+	}
+	public static void main(String args[])
+	{
+		
+	}
+
+}

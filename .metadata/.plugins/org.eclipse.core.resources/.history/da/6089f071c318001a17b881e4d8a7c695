@@ -1,0 +1,17 @@
+
+import org.springframework.stereotype.Controller;
+import javax.servlet.http.*;
+import org.springframework.web.servlet.mvc.AbstractController;
+
+@Controller
+public class MyController{
+
+	@RequestMapping("/Display")
+	@RequestMapping("/display")
+	public String display()
+	{
+		return "NewDisplay";
+		
+	}
+}
+ 

@@ -1,0 +1,19 @@
+package weekone;
+
+public class SampleBlock 
+{
+	{
+		System.out.println(" Initializer Block"); //runs first when the instance is created
+	}
+	static 
+	{
+		System.out.println("Static block");       //runs before the main gets exicuted 
+	}
+public static void main(String args[])
+{
+	int a=10;
+	int b=20;
+	System.out.println(+a +b);
+	//SampleBlock obj=new SampleBlock();
+}
+}
